@@ -1,8 +1,8 @@
-\# 🎮 Game Zone
+# 🎮 Game Zone
 
 
 
-O \*\*Game Zone\*\* é uma plataforma web gamificada voltada ao público gamer, desenvolvida como \*\*Projeto de Conclusão de Curso (TCC)\*\* no curso Técnico em Desenvolvimento de Sistemas.
+O Game Zone é uma plataforma web gamificada voltada ao público gamer, desenvolvida como Projeto de Conclusão de Curso (TCC) no curso Técnico em Desenvolvimento de Sistemas.
 
 
 
@@ -14,41 +14,17 @@ O sistema tem como objetivo criar um ambiente interativo e seguro para gamers, p
 
 
 
-\## 🧠 Objetivo do Projeto
+# 🧠 Objetivo do Projeto
 
 
 
-\- Criar uma plataforma exclusiva para gamers
+- Criar uma plataforma exclusiva para gamers
 
-\- Promover interação social por meio de comunidades e fóruns
+- Promover interação social por meio de comunidades e fóruns
 
-\- Aplicar conceitos de desenvolvimento web aprendidos no curso técnico
+- Aplicar conceitos de desenvolvimento web aprendidos no curso técnico
 
-\- Desenvolver um sistema funcional utilizando boas práticas de programação
-
-
-
----
-
-
-
-\## 🛠️ Tecnologias Utilizadas
-
-
-
-\- PHP
-
-\- JavaScript
-
-\- MySQL
-
-\- HTML5
-
-\- CSS3
-
-\- Tailwind CSS
-
-\- Arquitetura baseada em separação de responsabilidades
+- Desenvolver um sistema funcional utilizando boas práticas de programação
 
 
 
@@ -56,7 +32,31 @@ O sistema tem como objetivo criar um ambiente interativo e seguro para gamers, p
 
 
 
-\## 📂 Estrutura do Projeto
+# 🛠️ Tecnologias Utilizadas
+
+
+
+- PHP
+
+- JavaScript
+
+- MySQL
+
+- HTML5
+
+- CSS3
+
+- Tailwind CSS
+
+- Arquitetura baseada em separação de responsabilidades
+
+
+
+---
+
+
+
+# 📂 Estrutura do Projeto
 
 
 
@@ -356,41 +356,23 @@ gamezone/
 
 
 
-\## 🧩 Funcionalidades Implementadas
+# 🧩 Funcionalidades Implementadas
 
 
 
-\- Cadastro e login de usuários
+- Cadastro e login de usuários
 
-\- Sistema de autenticação
+- Sistema de autenticação
 
-\- Estrutura para comunidades gamers
+- Estrutura para comunidades gamers
 
-\- Interação entre usuários
+- Interação entre usuários
 
-\- Base para fóruns e chats
+- Base para fóruns e chats
 
-\- Interface responsiva
+- Interface responsiva
 
-\- Preparação para aplicação de gamificação
-
-
-
----
-
-
-
-\## 🔐 Segurança e Boas Práticas
-
-
-
-\- Separação de arquivos de configuração
-
-\- Uso de validações no back-end
-
-\- Estrutura preparada para melhorias em segurança
-
-\- Atenção à conformidade com a LGPD
+- Preparação para aplicação de gamificação
 
 
 
@@ -398,7 +380,25 @@ gamezone/
 
 
 
-\## 📌 Status do Projeto
+# 🔐 Segurança e Boas Práticas
+
+
+
+- Separação de arquivos de configuração
+
+- Uso de validações no back-end
+
+- Estrutura preparada para melhorias em segurança
+
+- Atenção à conformidade com a LGPD
+
+
+
+---
+
+
+
+# 📌 Status do Projeto
 
 
 
@@ -414,11 +414,11 @@ O projeto segue em constante evolução, com melhorias planejadas tanto em funci
 
 
 
-\## 👤 Autor
+# 👤 Autor
 
 
 
-\*\*Talles Costa Garcia\*\*  
+Talles Costa Garcia  
 
 Desenvolvedor Júnior  
 
@@ -430,7 +430,7 @@ Técnico em Desenvolvimento de Sistemas
 
 
 
-\## 📄 Observação
+# 📄 Observação
 
 
 
