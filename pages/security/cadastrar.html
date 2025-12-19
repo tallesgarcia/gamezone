@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - GameZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-['Oxanium'] flex items-center justify-center min-h-screen px-4">
+
+  <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md">
+    <h1 class="text-3xl font-bold text-indigo-400 mb-6 text-center">Cadastro no <span class="text-white">GameZone</span></h1>
+
+    <form id="cadastroForm" action="cadastrar.php" method="POST" class="flex flex-col gap-4">
+      <div>
+        <label for="nome" class="block mb-1 text-sm">Nome</label>
+        <input type="text" id="nome" name="nome" required
+               class="w-full px-3 py-2 rounded bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <div>
+        <label for="email" class="block mb-1 text-sm">E-mail</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-3 py-2 rounded bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <div>
+        <label for="senha" class="block mb-1 text-sm">Senha</label>
+        <input type="password" id="senha" name="senha" required
+               class="w-full px-3 py-2 rounded bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <div>
+        <label for="conf_senha" class="block mb-1 text-sm">Confirmar Senha</label>
+        <input type="password" id="conf_senha" name="conf_senha" required
+               class="w-full px-3 py-2 rounded bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <fieldset class="border border-gray-600 p-4 rounded">
+        <legend class="text-sm font-semibold mb-2">Selecione no mínimo 2 interesses:</legend>
+        <div class="grid grid-cols-2 gap-2 text-sm">
+          <label><input type="checkbox" name="interesses[]" value="RPG" class="mr-2">RPG</label>
+          <label><input type="checkbox" name="interesses[]" value="FPS" class="mr-2">FPS</label>
+          <label><input type="checkbox" name="interesses[]" value="MOBA" class="mr-2">MOBA</label>
+          <label><input type="checkbox" name="interesses[]" value="Aventura" class="mr-2">Aventura</label>
+          <label><input type="checkbox" name="interesses[]" value="Terror" class="mr-2">Terror</label>
+          <label><input type="checkbox" name="interesses[]" value="Corrida" class="mr-2">Corrida</label>
+          <label><input type="checkbox" name="interesses[]" value="Sobrevivência" class="mr-2">Sobrevivência</label>
+        </div>
+        <p id="interesseErro" class="text-red-400 text-sm mt-2 hidden">Selecione ao menos 2 interesses.</p>
+      </fieldset>
+
+      <button type="submit"
+              class="bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded font-semibold transition duration-200">
+        Cadastrar
+      </button>
+    </form>
+
+    <p class="text-center text-sm mt-4 text-gray-400">
+      Já tem uma conta?
+      <a href="entrar.php" class="text-indigo-400 hover:underline">Entrar</a>
+    </p>
+  </div>
+
+  <!-- Script de validação dos interesses -->
+  <script>
+    document.getElementById("cadastroForm").addEventListener("submit", function (e) {
+      const checkboxes = document.querySelectorAll('input[name="interesses[]"]:checked');
+      const erro = document.getElementById("interesseErro");
+
+      if (checkboxes.length < 2) {
+        e.preventDefault();
+        erro.classList.remove("hidden");
+      } else {
+        erro.classList.add("hidden");
+      }
+    });
+  </script>
+
+</body>
+</html>
